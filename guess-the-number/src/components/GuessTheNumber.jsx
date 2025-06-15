@@ -14,7 +14,7 @@ function GuessTheNumber() {
   const handleGuess = () => {
     const guessed = parseInt(input);
     if (isNaN(guessed) || guessed < 1 || guessed > 100) {
-      setMessage("Please enter a valid number");
+      setMessage("Please enter a number between 1 and 100");
       return;
     }
     setCount((count) => count + 1);
